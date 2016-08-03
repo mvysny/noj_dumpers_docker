@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e -o pipefail
+docker build -t mvysny/noj_dumpers:1.0.0a .
+

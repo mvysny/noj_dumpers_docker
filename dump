@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e -o pipefail
+mkdir -p target/out
+read -p "Unpack the EPWING dictionary into the target/dict directory and press ENTER"
+docker run -ti --rm -v "$PWD/target/dict:/dict" -v "$PWD/target/out:/out" -e LC_ALL=C.UTF-8 mvysny/noj_dumpers:1.0.0a python /noj_dumpers/noj_dumpers/noj_dumper.py -o /out/out /dict
+
