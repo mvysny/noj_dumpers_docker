@@ -12,3 +12,7 @@ When the image is built, you can run the dumper to extract the EPWING data:
 1. Extract the dictionary to `target/dict` directory, so that the file `target/dict/CATALOGS` exists
 2. Then, just run `./dump`
 3. Find the dumped data in the `target/out/out` file
+
+## Alternative way to extract the EPWING data
+
+* [zero-epwing](https://github.com/FooSoft/zero-epwing)
